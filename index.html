@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <audio id="audioWoodenAttack1" src="sounds/WoodMediumBashFlesh1.wav"></audio>
+    <audio id="audioWoodenAttack2" src="sounds/WoodMediumBashFlesh2.wav"></audio>
+    <audio id="audioWoodenAttack3" src="sounds/WoodMediumBashFlesh3.wav"></audio>
+    <audio id="AcolyteYesAttack1" src="sounds/AcolyteYesAttack1.wav"></audio>
+    <audio id="AcolyteYesAttack2" src="sounds/AcolyteYesAttack2.wav"></audio>
+    <audio id="AcolyteYesAttack3" src="sounds/AcolyteYesAttack3.wav"></audio>
+    <audio id="AcolyteYesAttack4" src="sounds/AcolyteYesAttack4.mp3"></audio>
+    <audio id="mob1Death" src="sounds/AcolyteDeath1.wav"></audio>
+    <audio id="GhoulYesAttack1" src="sounds/GhoulYesAttack1.wav"></audio>
+    <audio id="GhoulYesAttack2" src="sounds/GhoulYesAttack2.wav"></audio>
+    <audio id="GhoulYesAttack3" src="sounds/GhoulYesAttack3.wav"></audio>
+    <audio id="GhoulYesAttack4" src="sounds/GhoulYesAttack4.wav"></audio>
+    <audio id="mob2Death" src="sounds/GhoulDeath.wav"></audio>
+    <audio id="cryptFiendYesAttack1" src="sounds/CryptFiendYesAttack1.wav"></audio>
+    <audio id="cryptFiendYesAttack2" src="sounds/CryptFiendYesAttack2.wav"></audio>
+    <audio id="cryptFiendYesAttack3" src="sounds/CryptFiendYesAttack3.wav"></audio>
+    <audio id="mob3Death" src="sounds/PitFiendDeath1.wav"></audio>
+    <audio id="necromancerYesAttack1" src="sounds/NecromancerYesAttack1.wav"></audio>
+    <audio id="necromancerYesAttack2" src="sounds/NecromancerYesAttack2.wav"></audio>
+    <audio id="necromancerYesAttack3" src="sounds/NecromancerYesAttack3.wav"></audio>
+    <audio id="mob4Death" src="sounds/PitFiendDeath1.wav"></audio>
+    <audio id="AbominationYesAttack1" src="sounds/AbominationYesAttack1.wav"></audio>
+    <audio id="AbominationYesAttack2" src="sounds/AbominationYesAttack2.wav"></audio>
+    <audio id="AbominationYesAttack3" src="sounds/AbominationYesAttack3.wav"></audio>
+    <audio id="AbominationYesAttack4" src="sounds/AbominationYesAttack4.wav"></audio>
+    <audio id="mob5Death" src="sounds/AbominationDeath1.wav"></audio>
+    <audio id="EvilArthasYesAttack1" src="sounds/EvilArthasYesAttack1.wav"></audio>
+    <audio id="EvilArthasYesAttack2" src="sounds/EvilArthasYesAttack2.wav"></audio>
+    <audio id="EvilArthasYesAttack3" src="sounds/EvilArthasYesAttack3.wav"></audio>
+    <audio id="EvilArthasYesAttack4" src="sounds/EvilArthasYesAttack4.wav"></audio>
+    <audio id="arthasDeath" src="sounds/EvilArthasKnightDeath.wav"></audio>
+    <audio id="soundBackground1" src="sounds/1.mp3"></audio>
+    <audio id="soundBackground2" src="sounds/2.mp3"></audio>
+    <audio id="soundBackground3" src="sounds/3.mp3"></audio>
+    <audio id="soundBackground4" src="sounds/4.mp3"></audio>
+    <audio id="soundBackground5" src="sounds/5.mp3"></audio>
+    <audio id="soundBackground6" src="sounds/6.mp3"></audio>
+    <audio id="soundBackground7" src="sounds/7.mp3"></audio>
+    <audio id="error" src="sounds/Error.wav"></audio>
+    <audio id="restorationPotion" src="sounds/RestorationPotion.wav"></audio>
+    <audio id="moreGold" src="sounds/moreGold.mp3"></audio>
+    <audio id="buyItem" src="sounds/buyItem.wav"></audio>
+    <audio id="usePotion" src="sounds/potion.wav"></audio>
+    <audio id="heroDeath" src="sounds/heroDeath.wav"></audio>
+    <audio id="mobAttack1" src="sounds/mobAttack1.wav"></audio>
+    <audio id="mobAttack2" src="sounds/mobAttack2.wav"></audio>
+    <audio id="mobAttack3" src="sounds/mobAttack3.wav"></audio>
+</head>
+<body onload="fountain(), download()">
+<div id="coin"></div>
+<div id="opponents">
+    <div id="fountain" onclick="fountain()"></div>
+    <div id="acolyte" onclick="acolyte()">1</div>
+    <div id="ghoul" onclick="ghoul()">2</div>
+    <div id="cryptFiend" onclick="cryptFiend()">4</div>
+    <div id="necromancer" onclick="necromancer()">6</div>
+    <div id="abomination" onclick="abomination()">8</div>
+    <div id="arthas" onclick="arthas()">10</div>
+    <div id="secretBoss" onclick="secret()">??</div>
+</div>
+<div id="equipment">
+    <div id="weapon" onclick="upgradeWeapon()"></div>
+    <div id="armor" onclick="upgradeArmor()"></div>
+    <div id="shield" onclick="upgradeShield()"></div>
+    <div id="potion1" onclick="buyPotion1()" oncontextmenu="usePotion1()"><span id="quantityPotion1"></span>10</div>
+    <div id="potion2" onclick="buyPotion2()" oncontextmenu="usePotion2()"><span id="quantityPotion2"></span>30</div>
+    <div id="potion3" onclick="buyPotion3()" oncontextmenu="usePotion3()"><span id="quantityPotion3"></span>50</div>
+</div>
+<div id="yourCharacteristics">
+    <div id ="reload" onclick="reloadGame()"></div>
+    <div id="save" onclick="save()"></div>
+</div>
+<div id="you">
+    <div id="yourLevel"></div>
+    <div id="yourHP"></div>
+    <div id="yourExp"></div>
+</div>
+<div id="mob">
+    <div id="opponentsIcon" onclick="attackMob()"></div>
+    <div id="log"></div>
+</div>
+</body>
+</html>

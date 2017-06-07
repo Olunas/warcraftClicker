@@ -1,0 +1,263 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: #b6b6b6;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#opponents{
+    position: absolute;
+    float: left;
+    color: #f8221f;
+}
+#you{
+    bottom: 0px;
+    position: absolute;
+    float: left;
+    background: #444;
+    width: 250px;
+    height: 75px;
+}
+#you{
+    color: white;
+    text-align: center;
+}
+#yourLevel{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background: #555;
+    font-size: 45px;
+    line-height: 75px;
+    float: left;
+}
+#yourHP{
+    float: left;
+    width: 175px;
+    height: 37.5px;
+    line-height: 37.5px;
+    text-size: 25px;
+    background-color: #a02a2e;
+}
+#yourExp{
+    float: left;
+    width: 175px;
+    height: 37.5px;
+    line-height: 37.5px;
+    text-size: 25px;
+    background-color: #552048;
+}
+#fountain{
+    background-image:url(images/fountainIcon.png);
+    width:64px;
+    height:64px;
+    margin-bottom: 5px;
+}
+#acolyte{
+    background-image:url(images/acolyteIcon.png);
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 26px;
+    text-align: right;
+    line-height: 100px;
+}
+#ghoul{
+    background-image:url(images/ghoulIcon.png);
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 26px;
+    text-align: right;
+    line-height: 100px;
+}
+#cryptFiend{
+    background-image:url(images/cryptFiendIcon.png);
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 26px;
+    text-align: right;
+    line-height: 100px;
+}
+#necromancer{
+    background-image:url(images/necromancerIcon.png);
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 26px;
+    text-align: right;
+    line-height: 100px;
+}
+#abomination{
+    background-image:url(images/abominationIcon.png);
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 26px;
+    text-align: right;
+    line-height: 100px;
+}
+#arthas{
+    background-image:url(images/arthasIcon.png);
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 26px;
+    text-align: right;
+    line-height: 100px;
+}
+#secretBoss{
+    background-image:url(images/secretBossIcon.png);
+    width: 64px;
+    height: 64px;
+    font-weight: bolder;
+    font-size: 26px;
+    text-align: right;
+    line-height: 100px;
+}
+#mob{
+    margin: auto;
+    width: 367px;
+    height: 691px;
+}
+#opponentsIcon{
+    width: 367px;
+    height: 591px;
+    background-image: url("images/fountain.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#log{
+    width: 367px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #999;
+    font-size: 70px;
+    text-align: center;
+}
+#coin{
+    width: 164px;
+    height: 33px;
+    background: url(images/coins.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    color: #fff;
+    line-height: 33px;
+    padding-right: 10px;
+}
+#equipment{
+    positon: absolute;
+    right: 0;
+    float: right;
+    margin-top: 50px;
+    color: #e2df1c;
+}
+#weapon{
+    width: 64px;
+    height: 64px;
+    background-image: url(images/none.png);
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 100px;
+}
+#armor{
+    width: 64px;
+    height: 64px;
+    background-image: url(images/none.png);
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 100px;
+}
+#shield{
+    width: 64px;
+    height: 64px;
+    background-image: url(images/none.png);
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 100px;
+}
+#potion1{
+    width: 64px;
+    height: 64px;
+    background-image: url(images/potion1.png);
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 100px;
+}
+#quantityPotion1{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    padding: 3px;
+    line-height: 20px;
+}
+#potion2{
+    width: 64px;
+    height: 64px;
+    background-image: url(images/potion2.png);
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 100px;
+}
+#quantityPotion2{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    padding: 3px;
+    line-height: 20px;
+}
+#potion3{
+    width: 64px;
+    height: 64px;
+    background-image: url(images/potion3.png);
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 100px;
+}
+#quantityPotion3{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    padding: 3px;
+    line-height: 20px;
+}
+#yourCharacteristics{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 200px;
+    background-color: #e2df1c;
+}
+#save{
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+}
+#reload{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    width: 10px;
+    height: 10px;
+    background-color: #a02a2e;
+}
